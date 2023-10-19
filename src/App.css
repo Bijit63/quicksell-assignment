@@ -178,7 +178,8 @@ body{
   
   .kanban-board{
     display: flex;
-    flex-wrap: wrap; 
+    /* flex-wrap: wrap;  */
+    overflow-x: scroll;
     margin-top: 25px;
     margin-bottom: 10px;
    
@@ -316,6 +317,7 @@ body{
         flex-wrap: wrap; 
         margin-top: 5px;
         margin-bottom: 20px;
+        overflow-x: hidden;
         justify-content: center;
        
     ;
