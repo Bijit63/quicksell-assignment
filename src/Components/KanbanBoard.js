@@ -9,7 +9,7 @@ import Card from './Card';
 import { Context } from '../Context/NoteContext';
 
 
-const KandanBoard = () => {
+const KanbanBoard = () => {
   const context = useContext(Context);
     const {selectedGrouping,Group,users,prioritylist,tickets}=context;
 
@@ -26,7 +26,7 @@ const KandanBoard = () => {
 
   // FOR USERS 
   const groupTitle = selectedGrouping === 'userId' ? (
-    users.find(user => user.id === element) ? <div> <span className='x'><FaUserAlt/></span>{users.find(user => user.id === element).name} </div> : 'User not found'
+    users.find(user => user.id === element) ? <div> <span className='userheader-icon'><FaUserAlt/></span>{users.find(user => user.id === element).name} </div> : 'User not found'
   ) :
 
   // FOR STATUS 
@@ -95,4 +95,4 @@ const KandanBoard = () => {
   );
 };
 
-export default KandanBoard;
+export default KanbanBoard;

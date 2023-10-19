@@ -1,5 +1,5 @@
 import './App.css';
-import KandanBoard from './Components/KandanBoard';
+import KanbanBoard from './Components/KanbanBoard';
 import Navbar from './Components/Navbar';
 import { Notecontext } from './Context/NoteContext';
 
@@ -8,7 +8,7 @@ function App() {
   return (
   <Notecontext>
     <Navbar/>
-      <KandanBoard/>
+      <KanbanBoard/>
         
        
   
