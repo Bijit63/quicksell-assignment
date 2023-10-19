@@ -1,38 +1,297 @@
-.App {
-  text-align: center;
+body{
+    background-color: rgba(244,245,248)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    .shadowcustom{
+        box-shadow: 0px 0px 3px rgb(167, 166, 166);
+    }
+
+
+
+
+    /* mainbody.css */
+.navbar {
+    width: 100%;
+    height: 66px;
+    background: rgb(251, 250, 250);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-}
+  
+  .Display {
+    margin-left: 20px;
+    display: flex;
+    height: 25px;
+    min-width: 100px;
+    background: rgb(250, 250, 250);
+    box-shadow: 0px 0px 3px rgb(87, 87, 87);
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .imagefilter {
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
-}
+  
+  .labelfilter {
+    font-weight: 500;
+    font-size: 13.2px;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .filter-container {
+    margin-left: 20px;
+    position: absolute;
+    z-index: 4;
+    width: 250px;
+    padding: 8px;
+    background: rgb(251, 250, 250);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgb(195, 195, 195);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .filter-options {
+    margin: 8px;
+    display: flex;
+    font-size: 13px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .select-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+  }
+  
+  .select-input {
+    width: 110px;
+    padding: 1px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-weight: 500;
+    box-shadow: 0 0 0 2px transparent;
+    outline: none;
+    transition: border 0.1s, box-shadow 0.1s;
+  }
+  
+
+
+
+
+
+
+
+
+
+  /* card.css */
+.card-container {
+    background: white;
+    min-width: 290px;
+    /* margin-left: 12px;
+    margin-right: 12px; */
+    margin-top: 10px;
+    max-width: 290px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgb(184, 183, 183);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    font-size: 13.2px;
+    color: hsl(0, 0%, 37%);
+
+  }
+  .card-id{
+    font-size: 15px;
+  }
+  
+  
+  .title h1 {
+    font-weight: 500;
+  }
+  
+  .user-icon {
+    border: 2px solid #000;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: white;
+  }
+  
+  .description {
+    font-size: 12.1px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    font-weight: 600;
+  }
+  
+  .details {
+   
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #00000084;
+    width: fit-content;
+    padding-left: 2px;
+    padding-right: 5px;
+    height: 20px;
+
+  }
+  
+  .dot {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+  
+  .feature-request {
+    font-size: 12px;
+    color: #5e5e5e;
+    font-weight: 500;
+  }
+  
+  .kanban-board{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 25px;
+    margin-bottom: 10px;
+   
+;
+  }
+
+  .kanban-column > * {
+    margin-left: 15px;
+  }
+
+
+
+
+
+  .yellow{
+    color: rgb(255, 191, 0);
+  }
+  .gray{
+    color: gray;
+  }
+  .red{
+    color: red;
+  }
+
+  .kandan-header{
+    display: flex;
+    align-items: center;
+  }
+  .kandan-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .kandan-columnname{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .priorityheader-icon{
+    margin-right: 8px;
+    
+
+  }
+
+  .userheader-icon{
+    border: 2px solid #000;
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 0.7px;
+    padding-bottom: 0.7px;
+    margin-right: 8px ;
+    border-radius: 50%;
+    background: #000;
+    color: white;
+  }
+
+
+  .columncard-count{
+    margin-left: 10px;
+    color: rgb(64, 64, 64);
+  }
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1364px) {
+    .card-container {
+        background: white;
+        min-width: 16vw;
+        /* margin-left: 12px;
+        margin-right: 12px; */
+        margin-top: 10px;
+        max-width: 16vw;
+        height: 100px;
+        border-radius: 8px;
+        box-shadow: 0 0 7px rgb(184, 183, 183);
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+      }
+      .kanban-column > * {
+        margin-left: 0.8vw;
+        margin-right: 0.8vw;
+      }
+  }
+
+
+  @media screen and (max-width: 685px) {
+    .card-container {
+        background: white;
+        /* margin-left: 12px; */
+        /* margin-right: 12px; */
+        margin-top: 10px;
+        min-width: 92vw;
+        max-width: 92vw;
+        height: 100px;
+        border-radius: 8px;
+        box-shadow: 0 0 7px rgb(184, 183, 183);
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+      }
+      .kanban-column > * {
+        margin-left: 10px;
+        margin-right: 15px;
+      }
+  }
