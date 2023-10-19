@@ -176,15 +176,39 @@ body{
     font-weight: 500;
   }
   
-  .kanban-board{
+  .kanban-board {
     display: flex;
-    /* flex-wrap: wrap;  */
-    overflow-x: scroll;
+    overflow-x: auto; /* Change 'scroll' to 'auto' */
     margin-top: 25px;
     margin-bottom: 10px;
-   
-;
-  }
+    /* Add other styles as needed */
+}
+
+/* Styling the scrollbar for WebKit-based browsers */
+.kanban-board::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+}
+
+.kanban-board::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+}
+
+.kanban-board::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+}
+
+.kanban-board::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.kanban-board::-webkit-scrollbar-button {
+    display: none;
+}
+
+.kanban-board::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 
   .kanban-column > * {
     margin-left: 15px;
